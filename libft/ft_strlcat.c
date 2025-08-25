@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moatieh <moatieh@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/13 23:59:57 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/23 20:02:06 by moatieh          ###   ########.fr       */
+/*   Updated: 2025/08/26 01:03:44 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
     size_t dcount;
     int    count;
-    size_t stclen;
+    size_t srclen;
 
     srclen = 0;
     dcount = 0;
     count = 0;
-    while (src[dcount] != '\0')
+    while (dst[dcount] != '\0')
     {
         dcount++;
     }
@@ -29,21 +29,22 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
     {
         srclen++;
     }
-    if (srclen + dcount > size)
-    return (srclen);
-    while (dst[dcount])
+    if (dcount >= size)
+       return (srclen + size);
+    while (src[count] != '\0' && dcount + 1 < size)
     {
-        dst[dcount] == src[count];
+        dst[dcount] = src[count];
         count++;
         dcount++;
-        srclen++;
     }
-    return (srclen);
+    if (dcount < size)
+    dst[dcount] = '\0';
+    return (srclen + dcount);
 }
 
 int main()
 {
-	char dst[] = "";
+	char dst[] = "hi i am mo haaaaaa mmad";
 	char src[] = "hello";
 	int size = 3;
 	size_t test;

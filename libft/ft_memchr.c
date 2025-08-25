@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moatieh <moatieh@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/23 18:43:35 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/23 20:24:25 by moatieh          ###   ########.fr       */
+/*   Updated: 2025/08/26 01:10:27 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
 void *ft_memchr(const void *s, int c, size_t n)
 {
     size_t    count;
