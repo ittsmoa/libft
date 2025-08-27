@@ -1,32 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 01:49:13 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/26 01:49:13 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/27 02:11:29 by marvin            #+#    #+#             */
+/*   Updated: 2025/08/27 02:11:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *calloc(size_t num, size_t size)
+char *ft_strdup(const char *s)
 {
-    char *ptr;
-    size_t count;
-    
-    ptr = NULL;
-    count = 0;
-    ptr = (char *)malloc(num * size);
-    if (ptr == NULL)
+    char *cpy;
+    size_t slen;
+    int count;
+
+     if (!s)
         return NULL;
-    while (count < ( num * size))
+
+    slen = ft_strlen(s);
+    cpy = (char *)malloc(( slen + 1) * sizeof(char));
+    count = 0;
+    while (s[count])
     {
-        ptr[count] = 0;
+        cpy[count] = s[count];
         count++;
     }
-        
-    return (void *)ptr;
+    cpy[count] = '\0';
+    return cpy;
+}
+
+int main()
+{
+    char *s = "hi i am moa";
+    char *copy = ft_strdup(s);
+
+    printf("Original: %s\nCopy    : %s\n", s, copy);
+    free(copy);
 }

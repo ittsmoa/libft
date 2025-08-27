@@ -1,44 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 02:27:55 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/26 02:27:55 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/27 02:48:04 by marvin            #+#    #+#             */
+/*   Updated: 2025/08/27 02:48:04 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void make_upper(unsigned int i, char *c)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    (void)i;
-    if (*c >= 'a' && *c <= 'z')
-        *c = *c - 32;
-}
-
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
-{
-    unsigned int i;
-
+    char    *str;
+    size_t  i;
+    
     i = 0;
-    while (s[i])
+    if (!s)
     {
-        f (i, &s[i]);
+        return NULL;
+    }
+    
+    str = (char *)malloc((len + 1) * sizeof(char));
+    while (i < len && s[start + i])
+    {
+        str[i] = s[start + i];
         i++;
     }
-
+    str[i] = '\0';
+    return str;
 }
 
 int main()
 {
-    char str[] = "hello world!";
-    printf("Before: %s\n", str);
-
-    ft_striteri(str, make_upper);
-
-    printf("After: %s\n", str);
+    char *s = "hi hi welcome to";
+    printf("%s", ft_substr(s, 6, 7));
     return 0;
 }
+    
