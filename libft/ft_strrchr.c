@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 01:17:10 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/26 01:17:10 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:39:06 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:39:06 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char *ft_strrchr(const char *s, int c)
         return (char *)(s + indx);;
     }
     else
-    return NULL;
+    return (NULL);
 }
 
 int main()

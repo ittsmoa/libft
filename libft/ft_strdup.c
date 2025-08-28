@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/27 02:11:29 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/27 02:11:29 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:37:19 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:37:19 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char *ft_strdup(const char *s)
         count++;
     }
     cpy[count] = '\0';
-    return cpy;
+    return (cpy);
 }
 
 int main()

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 01:01:46 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/26 01:09:27 by marvin           ###   ########.fr       */
+/*   Updated: 2025/08/28 18:43:43 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ int ft_tolower(int c)
     {
         c = c  + 32;
     }
-    return c;
+    return (c);
 }

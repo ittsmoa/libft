@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: moatieh <moatieh@student.42.fr>            +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/03 20:16:09 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/13 19:09:11 by moatieh          ###   ########.fr       */
+/*   Updated: 2025/08/28 18:41:10 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int    ft_isalpha( int c )
     {
         return 1;
     }
-    return 0;
+    return (0);
 }
 // int main()
 // {

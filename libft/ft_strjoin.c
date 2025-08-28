@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/27 03:20:32 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/27 03:20:32 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:37:44 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:37:44 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char *ft_strjoin(char const *s1, char const *s2)
         j++;
     }
     str[i + j] = '\0';
-    return str;    
+    return (str);    
 }
 
 int main()

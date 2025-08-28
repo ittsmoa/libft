@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/25 20:52:04 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/25 20:52:04 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:36:50 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:36:50 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@ void *ft_memmove(void *dest, const void *src, size_t n)
         d[i] = s[i];
         i++;
     }
-    return d;
-    
+    return (d);
 }

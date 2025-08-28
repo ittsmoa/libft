@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/13 19:15:35 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/26 01:10:09 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:35:32 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:40:59 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int    ft_isalnum(int c)
     {
         return 1;
     }
-    return 0;
+    return (0);
     
 }
 

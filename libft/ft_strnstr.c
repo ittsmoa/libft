@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/23 20:35:37 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/26 01:35:19 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:38:55 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:43:30 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
         i++;
         j = 0;
     }
-    return NULL;
+    return (NULL);
 }
 
 int main ()

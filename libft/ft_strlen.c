@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/13 19:54:05 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/27 02:40:54 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:38:06 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:43:14 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ size_t ft_strlen(const char *s)
     {
         count++;
     }
-    return ( count );
+    return (count);
 }
     

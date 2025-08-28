@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/23 18:43:35 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/26 01:10:27 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:36:16 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:42:10 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void *ft_memchr(const void *s, int c, size_t n)
         }
         count++;
     }
-    return NULL;
+    return (NULL);
 }
 
 int main ()
@@ -36,5 +36,5 @@ int main ()
     const char *s = "hello world";
    printf("%s",(char *) ft_memchr(s, (int) 'r', 10));
    
-    return 0;
+    return (0);
 }

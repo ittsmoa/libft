@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft_strmapi.c                                    :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/27 04:15:32 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/27 04:15:32 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:38:28 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:38:28 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
         i++;
     }
     str[i] = '\0';
-    return str;
+    return (str);
 }

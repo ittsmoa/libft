@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/13 19:44:06 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/26 01:10:19 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:35:58 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:41:40 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ int	ft_isprint(int c)
 	{
 		return 1;
 	}
-	return 0;
+	return (0);
 }

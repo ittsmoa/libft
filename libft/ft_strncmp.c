@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/26 01:24:22 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/26 01:24:22 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 18:38:43 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/28 18:38:43 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n)
         }
         count++;
     }
-    return 0;
+    return (0);
 
 }
 int main ()
