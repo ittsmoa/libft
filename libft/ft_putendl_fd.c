@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft_itoa.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/27 04:10:04 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/27 04:10:04 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 02:17:55 by marvin            #+#    #+#             */
+/*   Updated: 2025/08/28 02:17:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
-char *ft_itoa(int n)
+void ft_putendl_fd(char *s, int fd)
 {
-    char    *str;
-    int    count;
+     int     count;
 
-    str = (char *)malloc(2 * sizeof(char));
     count = 0;
-    if (n >= 0 && n <= 9)
+    while (s[count])
     {
-        str[count] = n + '0';
-        str[1] = '\0';
-        return str;
-    }
-    return NULL;
-}
-
-int main()
-{
-    int x = 6;
-    printf("%s", ft_itoa(x));
-    return 0;
+        write (fd, &s[count], 1);
+        count++;
+    }   
+    write(fd, "\n", 1);
 }

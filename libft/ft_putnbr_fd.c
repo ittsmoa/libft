@@ -1,37 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft_itoa.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/27 04:10:04 by marvin            #+#    #+#             */
-/*   Updated: 2025/08/27 04:10:04 by marvin           ###   ########.fr       */
+/*   Created: 2025/08/28 02:21:32 by marvin            #+#    #+#             */
+/*   Updated: 2025/08/28 02:21:32 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-char *ft_itoa(int n)
+void ft_putnbr_fd(int n, int fd)
 {
-    char    *str;
-    int    count;
-
-    str = (char *)malloc(2 * sizeof(char));
-    count = 0;
-    if (n >= 0 && n <= 9)
-    {
-        str[count] = n + '0';
-        str[1] = '\0';
-        return str;
-    }
-    return NULL;
-}
-
-int main()
-{
-    int x = 6;
-    printf("%s", ft_itoa(x));
-    return 0;
+    
 }
