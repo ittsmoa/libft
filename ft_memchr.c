@@ -1,43 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 18:37:30 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/30 01:16:13 by moatieh          ###   ########.fr       */
+/*   Created: 2025/08/28 18:36:16 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/30 16:51:31 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-void	make_upper(unsigned int i, char *c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	(void)i;
-	if (*c >= 'a' && *c <= 'z')
-		*c = *c - 32;
-}
+	size_t			count;
+	unsigned char	*str;
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
-{
-	unsigned int	i;
-
-	i = 0;
-	while (s[i])
+	count = 0;
+	str = (unsigned char *)s;
+	while (count < n)
 	{
-		f(i, &s[i]);
-		i++;
+		if (str[count] == (unsigned char)c)
+		{
+			return (&str[count]);
+		}
+		count++;
 	}
+	return (NULL);
 }
 
 // int	main(void)
 // {
-// 	char str[] = "hello world!";
-// 	printf("Before: %s\n", str);
+// 	int count = 0;
+// 	const char *s = "hello world";
+// 	printf("%s", (char *)ft_memchr(s, (int)'\0', 10));
 
-// 	ft_striteri(str, make_upper);
-
-// 	printf("After: %s\n", str);
 // 	return (0);
 // }

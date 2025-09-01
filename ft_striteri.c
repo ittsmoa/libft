@@ -1,25 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/03 20:16:09 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/28 18:41:10 by moatieh          ###   ########.fr       */
+/*   Created: 2025/08/28 18:37:30 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/30 16:38:58 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	make_upper(unsigned int i, char *c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
-		return (1);
-	}
-	return (0);
+	(void)i;
+	if (*c >= 'a' && *c <= 'z')
+		*c = *c - 32;
 }
-// int main()
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int	i;
+
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
+}
+
+// int	main(void)
 // {
-//     int c = '*';
-//     printf("%d",isalpha(c));
+// 	char str[] = "hello world!";
+// 	printf("Before: %s\n", str);
+
+// 	ft_striteri(str, make_upper);
+
+// 	printf("After: %s\n", str);
+// 	return (0);
 // }

@@ -12,8 +12,7 @@
 
 #include "libft.h"
 
-static int
-	ft_char_in_set(char c, char const *set)
+static int	ft_char_in_set(char c, char const *set)
 {
 	size_t	i;
 
@@ -27,8 +26,7 @@ static int
 	return (0);
 }
 
-char
-	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
 	size_t	i;
@@ -50,3 +48,9 @@ char
 	str[i] = 0;
 	return (str);
 }
+/*int main()
+{
+	char s[]= "hello hello bro";
+	char set[] = "o";
+	printf("%s\n", ft_strtrim(s, set));
+}*/

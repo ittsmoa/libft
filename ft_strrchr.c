@@ -1,30 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 18:36:50 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/30 02:45:27 by moatieh          ###   ########.fr       */
+/*   Created: 2025/08/28 18:39:06 by moatieh           #+#    #+#             */
+/*   Updated: 2025/08/30 16:37:57 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char		*s;
-	unsigned char		*d;
-	size_t				i;
+	int	count;
+	int	indx;
 
-	s = (unsigned char *)src;
-	d = (unsigned char *)dest;
-	i = 0;
-	while (i < n)
+	count = 0;
+	indx = -1;
+	while (s[count])
 	{
-		d[i] = s[i];
-		i++;
+		if (s[count] == (char)c)
+		{
+			indx = count;
+		}
+		count++;
 	}
-	return (d);
+	if (c == '\0')
+		return ((char *)(s + count));
+	if (indx != -1)
+		return ((char *)(s + indx));
+	return (NULL);
 }
+//  int	main(void)
+//  {
+//  	char expl[] = "wello world";
+//  	printf("%c\n", *ft_strrchr(expl, '\0'));
+//  	return (0);
+// }
