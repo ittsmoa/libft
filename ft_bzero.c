@@ -6,7 +6,7 @@
 /*   By: moatieh <moatieh@student.42amman.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 18:35:06 by moatieh           #+#    #+#             */
-/*   Updated: 2025/08/30 00:53:33 by moatieh          ###   ########.fr       */
+/*   Updated: 2025/09/30 23:16:32 by moatieh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ void	ft_bzero(void *s, size_t n)
 		count++;
 	}
 }
-/*
+
 int	main(void)
 {
 	char p[] = "iuhke  rehfgbf e";
 	ft_bzero(p, 4);
 
 	printf("%s\n", p);
-}*/
+}
